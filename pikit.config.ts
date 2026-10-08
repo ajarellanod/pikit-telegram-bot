@@ -25,7 +25,6 @@ import providerOpenrouter from "./src/pikit/provider-openrouter/index.ts";
 import runtimePi from "./src/pikit/runtime-pi/index.ts";
 import conversationsKv from "./src/pikit/conversations-kv/index.ts";
 import routerBasic from "./src/pikit/router-basic/index.ts";
-import outboundDurable from "./src/pikit/outbound-durable/index.ts";
 import channelTelegramWebhook, { worker as channelTelegramWebhookWorker } from "./src/pikit/channel-telegram-webhook/index.ts";
 import executionDo from "./src/pikit/execution-do/index.ts";
 import toolRead from "./src/pikit/tool-read/index.ts";
@@ -59,7 +58,6 @@ export default defineApp({
     runtimePi,
     conversationsKv,
     routerBasic,
-    outboundDurable,
     channelTelegramWebhook,
     executionDo,
     toolRead,
