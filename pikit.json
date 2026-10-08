@@ -1396,9 +1396,6 @@
       "src/dashboard/src/views/conversations/sources.ts": {
         "hash": "sha256:9f72677b470e461f52b2950d013a05b2388f8162790e0f8861a80686f09d1884"
       },
-      "src/dashboard/src/views/delivery/index.tsx": {
-        "hash": "sha256:d3afaa7c531167be25326d22284d5e5a753091218202b79858ab2de021be507b"
-      },
       "src/dashboard/tsconfig.app.json": {
         "hash": "sha256:1cbb64e1a8f646eb1be3819f0e0575aeef9e9aa93620bbe808ba0831a2be9879"
       },
