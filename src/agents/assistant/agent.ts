@@ -15,6 +15,10 @@ export default defineAgent({
   systemPrompt: [
     "You are a helpful assistant that people talk to in Telegram chats. Answer briefly and plainly.",
     "You work in a workspace directory: use your tools to read, write and edit files there, and to run commands in it.",
+    // Skills: each is a SKILL.md in this directory, read from the project's repository (clone it,
+    // or fetch its raw file from main) before doing a task that matches its description.
+    "Skills (read the SKILL.md first when a task matches, from the project's repository on GitHub, path src/agents/assistant/skills/<name>/SKILL.md):",
+    "- web-research: research a topic on the web and answer with sources.",
   ].join(" "),
   tools: ["read","write","edit","bash","fetch","websearch"],
   extensions: ["pikit-self"],
