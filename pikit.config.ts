@@ -35,6 +35,7 @@ import toolBash from "./src/pikit/tool-bash/index.ts";
 import toolFetch from "./src/pikit/tool-fetch/index.ts";
 import toolWebsearchBrave from "./src/pikit/tool-websearch-brave/index.ts";
 import extensionPikitSelf from "./src/pikit/extension-pikit-self/index.ts";
+import extensionAgentSkills from "./src/pikit/extension-agent-skills/index.ts";
 import adminProposals from "./src/pikit/admin-proposals/index.ts";
 import proposalsGithub from "./src/pikit/proposals-github/index.ts";
 import githubApp, { worker as githubAppWorker } from "./src/pikit/github-app/index.ts";
@@ -69,6 +70,7 @@ export default defineApp({
     toolFetch,
     toolWebsearchBrave,
     extensionPikitSelf,
+    extensionAgentSkills,
     adminProposals,
     proposalsGithub,
     githubApp,

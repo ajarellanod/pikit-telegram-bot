@@ -17,5 +17,5 @@ export default defineAgent({
     "You work in a workspace directory: use your tools to read, write and edit files there, and to run commands in it.",
   ].join(" "),
   tools: ["read","write","edit","bash","fetch","websearch"],
-  extensions: ["pikit-self"],
+  extensions: ["pikit-self", "agent-skills"],
 });
