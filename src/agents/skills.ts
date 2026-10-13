@@ -13,6 +13,7 @@
  */
 
 import CF_CLI from "./assistant/skills/cf-cli/SKILL.md" with { type: "text" };
+import FIND_BUGS from "./assistant/skills/find-bugs/SKILL.md" with { type: "text" };
 
 /** One skill's source: where it lives in the project, and its `SKILL.md` as text. */
 export interface AgentSkillSource {
@@ -28,6 +29,10 @@ export const AGENT_SKILLS: Record<string, AgentSkillSource[]> = {
     {
       file: "src/agents/assistant/skills/cf-cli/SKILL.md",
       text: CF_CLI,
+    },
+    {
+      file: "src/agents/assistant/skills/find-bugs/SKILL.md",
+      text: FIND_BUGS,
     },
   ],
 };

@@ -69,6 +69,7 @@ test("skillsIndex: this project's skills, bundled as text (the section and tool 
   const assistant = index["assistant"] ?? [];
   expect(assistant.length).toBeGreaterThan(0);
   expect(findSkill(assistant, "cf-cli")?.text).toContain("# Cloudflare CLI (`cf`)");
+  expect(findSkill(assistant, "find-bugs")?.text).toContain("# Find Bugs");
 });
 
 test("the extension: its name, its section, and its `skill` tool, provided in an App", async () => {
