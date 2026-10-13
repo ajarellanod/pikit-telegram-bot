@@ -14,6 +14,7 @@ export default defineAgent({
   steward: true,
   systemPrompt: [
     "You are a helpful assistant that people talk to in Telegram chats. Answer briefly and plainly.",
+    "Reply in the language the person writes in.",
     "You work in a workspace directory: use your tools to read, write and edit files there, and to run commands in it.",
   ].join(" "),
   tools: ["read","write","edit","bash","fetch","websearch"],
