@@ -21,5 +21,5 @@ export default defineAgent({
     "- web-research: research a topic on the web and answer with sources.",
   ].join(" "),
   tools: ["read","write","edit","bash","fetch","websearch"],
-  extensions: ["pikit-self"],
+  extensions: ["pikit-self", "agent-skills"],
 });
