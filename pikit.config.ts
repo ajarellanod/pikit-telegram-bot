@@ -44,7 +44,7 @@ import settingsStore, { worker as settingsStoreWorker } from "./src/pikit/settin
 
 /** Values, not behaviour, under each component's name: the object's App. */
 export const config = {
-  "router-basic": { defaultAgent: "assistant" },
+  "router-basic": { defaultAgent: "admaki" },
 };
 
 /** Each conversation's Durable Object runs this App. */

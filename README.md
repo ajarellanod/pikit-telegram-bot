@@ -69,7 +69,7 @@ Your bot talks only to the chats that logged in with its password. How it works:
 
    `pikit upgrade`, which brings newer versions of the installed components, is planned and not
    there yet; until then `pikit remove` and `pikit add` replace a component. Change the model and the
-   prompt in `src/agents/assistant/agent.ts`.
+   prompt in `src/agents/admaki/agent.ts`.
 
 ## Your dashboard
 
@@ -178,7 +178,7 @@ reading your first message; `pikit up` deploys to the same Worker (`wrangler.jso
 | Path | What it is |
 |---|---|
 | `pikit.config.ts` | the composition root: the Worker's App (`worker`) and each chat's Durable Object's App (the default export) |
-| `src/agents/assistant/agent.ts` | your agent: its model, prompt and tools |
+| `src/agents/admaki/agent.ts` | your agent: its model, prompt and tools |
 | `src/dashboard/` | the dashboard: its source and `bun.lock`, built by `wrangler.jsonc`'s `build.command` before every bundle |
 | `src/pikit/<component>/` | the installed components, with their tests and a README each |
 | `wrangler.jsonc` | the Worker: its name, the dashboard's build (with Bun through npx, since Workers Builds' own is older), the `Conversation` Durable Object and its SQLite migration |
